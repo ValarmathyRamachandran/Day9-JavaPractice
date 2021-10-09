@@ -70,7 +70,7 @@ public class AddressBook {
 				}
 			
 			
-			/* else if (choice == 2) {
+			 else if (choice == 2) {
 				System.out.println("Enter the First Name to search:");
 				String searchText = scan.next();
 				for(int i=0;i<lstContactInfo.size();i++)
@@ -97,7 +97,7 @@ public class AddressBook {
 				menu();
 				choice = scan.nextInt();
 			}
-	    	else if (choice == 3)
+	    	/* else if (choice == 3)
 	    	{
 	    		System.out.println("Enter the First Name to Search:");
 			String searchText = scan.next();
@@ -118,7 +118,7 @@ public class AddressBook {
 	    		objContactInfo.Print(lstContactInfo);
 				menu();
 				choice = scan.nextInt();
-	    	} */
+	    	} */ 
 	    	else
 	    		System.out.println("Invalid option, please select another choice\n");		
 		}
