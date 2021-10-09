@@ -71,7 +71,7 @@ public class AddressBook {
 			
 			
 			 else if (choice == 2) {
-				System.out.println("Enter the First Name to search to edit:");
+				System.out.println("Enter the First Name to search:");
 				String searchText = scan.next();
 				for(int i=0;i<lstContactInfo.size();i++)
 				{
@@ -97,9 +97,9 @@ public class AddressBook {
 				menu();
 				choice = scan.nextInt();
 			}
-	    	/*  else if (choice == 3)
+	    	else if (choice == 3)
 	    	{
-	    		System.out.println("Enter the First Name to Search to Delete:");
+	    		System.out.println("Enter the First Name to Search:");
 			String searchText = scan.next();
 			for(int i=0;i<lstContactInfo.size();i++)
 			{
@@ -110,15 +110,19 @@ public class AddressBook {
 				}
 			}
 			menu();
-			choice = scan.nextInt(); */
+			choice = scan.nextInt();
 	    	}
-	    	 else if (choice == 4)
+	    	else if (choice == 4)
 	    	{
 	    		System.out.println("Displayed Contact Information:");
 	    		objContactInfo.Print(lstContactInfo);
 				menu();
 				choice = scan.nextInt();
-	    	}   
+	    	} 
+			else if (choice == 5){
+				System.out.println("You have successfully existed the Address Book")
+				System.exit(0);
+			}
 	    	else
 	    		System.out.println("Invalid option, please select another choice\n");		
 		}
@@ -126,9 +130,9 @@ public class AddressBook {
     public static void menu() {
 		System.out.println("1.Add a new contact to your address book.");
 		System.out.println("2.Edit a contact from your address book.");
-		//System.out.println("3.Delete a contact from your address book.");
+		System.out.println("3.Delete a contact from your address book.");
 		System.out.println("4.Print out information of your contacts.");
-		//System.out.println("5.Quit.");
+		System.out.println("5.Quit.");
 		System.out.println("Enter your menu choice:");
 		
     }
